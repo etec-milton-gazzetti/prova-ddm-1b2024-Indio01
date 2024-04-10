@@ -5,7 +5,8 @@ import DashboardScreen from './screens/DashboardScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import Home from './screens/page1/index'
 
-//video de auxilio https://www.youtube.com/watch?v=bnRIvh6NVqA
+//video de auxilio 1 https://www.youtube.com/watch?v=SwrqwlpwD5Q
+//video de auxilio 2 https://www.youtube.com/watch?v=bnRIvh6NVqA
 
 const Drawer = createDrawerNavigator();
 export default function Routes() {
@@ -17,8 +18,13 @@ return (
         component={Home}
         options={{
             headerShown:true,
+            drawerActiveTintColor: '#fff',
+            drawerInactiveTintColor: '#fff',
+            drawerContentStyle:{
+                backgroundColor: '#234260',
+            },
             headerStyle:{
-                backgroundColor: 'blue'
+                backgroundColor: '#234260',
             }
         }}/>
         <Drawer.Screen 
@@ -26,14 +32,29 @@ return (
         component={DashboardScreen}
         options={{
             headerShown:true,
+            drawerActiveTintColor: '#fff',
+            drawerInactiveTintColor: '#fff',
+            drawerContentStyle:{
+                backgroundColor: '#234260',
+            },
+            headerStyle:{
+                backgroundColor: '#234260',
+            }
         }}/>
         <Drawer.Screen
         name='Settings'
         component={SettingsScreen}
         options={{
             headerShown:true,
-        }}
-        />
+            drawerActiveTintColor: '#fff',
+            drawerInactiveTintColor: '#fff',
+            drawerContentStyle:{
+                backgroundColor: '#234260',
+            },
+            headerStyle:{
+                backgroundColor: '#234260',
+            }
+        }}/>
     </Drawer.Navigator>
   )
 }
