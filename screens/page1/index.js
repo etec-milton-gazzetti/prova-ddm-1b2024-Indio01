@@ -1,12 +1,26 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView } from 'react-native';
+import { useCallback } from 'react';
+import styles from './styles';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView, Image } from 'react-native';
+import * as SplashScreen from 'expo-splash-screen';
+import { useFonts } from 'expo-splash-screen';
 import { Ionicons } from '@expo/vector-icons';
+import Logo from '../../assets/img/arvore.png'
 
 const Home = ({navigation}) => {
   return (
       <View style={styles.container}>
+        <SafeAreaView>
+          <ScrollView>
+            <View style={styles.content}>
+              <Image source={Logo} style={styles.Image}/>
+              <Text>Mitologia Nordica</Text>
+            </View>
+          </ScrollView>
+        </SafeAreaView>
+
         <View style={styles.buttonTitle}>
-          <Text style={styles.buttonText}>Tittle</Text>
+          <Text style={styles.buttonText}>INICIO</Text>
         </View>
         <TouchableOpacity style={styles.buttonBurguer} onPress={()=>navigation.toggleDrawer()}>
           <Text style={styles.buttonText}><Ionicons name="menu" size={24} color="#fff" /></Text>
@@ -14,42 +28,5 @@ const Home = ({navigation}) => {
       </View>
   );
 };
-
-const styles = StyleSheet.create({
-  scrollView:{
-    flex: 1,
-  },
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  buttonBurguer: {
-    position: 'absolute',
-    top: 30,
-    left: 20,
-    backgroundColor: '#234260',
-    padding: 10,
-    borderRadius: 5,
-    textAlign:'center',
-    alignItems:'center',
-  },
-  buttonTitle: {
-    position: 'absolute',
-    top: 30,
-    left: 75,
-    right: 20,
-    backgroundColor: '#234260',
-    padding: 10,
-    borderRadius: 5,
-    textAlign:'center',
-    alignItems:'center',
-  },
-  buttonText: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: '20',
-  },
-});
 
 export default Home;
