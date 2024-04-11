@@ -9,7 +9,7 @@ export default Style = StyleSheet.create({
         alignItems: 'center',
         // backgroundColor:'black',
         justifyContent:'center',
-        marginTop: 50,
+        marginTop: 0,
         margin: 20,
         width: 335,
         height: 535
@@ -52,8 +52,18 @@ export default Style = StyleSheet.create({
         textAlign: 'center',
         fontSize: 20,
       },
-      Image:{
-        width: 225,
-        height: 225,
-      }
+      Texto:{
+        paddingTop: 25,
+        fontSize: 20,
+        textAlign: 'center'
+      },
+      ImagemIlustrativa:{
+        width: 400,
+        height: 200
+      },
+      ImagemIlustrativaView:{
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+      },
     });
