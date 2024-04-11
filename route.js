@@ -1,12 +1,11 @@
 import 'react-native-gesture-handler';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import DashboardScreen from './screens/DashboardScreen';
-import SettingsScreen from './screens/SettingsScreen';
 
 import Home from './screens/page1/index';
 import Religiao from './screens/page2/index';
 import Apocalipse from './screens/page3/index';
 import Criaturas from './screens/page4/index';
+import Sobre from './screens/page5/index'
 
 //video de auxilio 1 https://www.youtube.com/watch?v=SwrqwlpwD5Q
 //video de auxilio 2 https://www.youtube.com/watch?v=bnRIvh6NVqA
@@ -73,9 +72,9 @@ return (
                 backgroundColor: '#234260',
             }
         }}/>
-        <Drawer.Screen
-        name='Settings'
-        component={SettingsScreen}
+        <Drawer.Screen 
+        name='Sobre'
+        component={Sobre}
         options={{
             headerShown:false,
             drawerActiveTintColor: '#fff',
