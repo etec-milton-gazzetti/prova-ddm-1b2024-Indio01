@@ -32,8 +32,8 @@ return (
         component={Home}
         options={{
             headerShown:true,
-            drawerActiveTintColor: '#fff',
-            drawerInactiveTintColor: '#fff',
+            drawerActiveTintColor: 'black',
+            drawerInactiveTintColor: 'black',
             drawerContentStyle:{
                 backgroundColor: '#234260',
             },
