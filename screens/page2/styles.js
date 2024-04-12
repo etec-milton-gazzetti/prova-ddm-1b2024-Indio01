@@ -10,9 +10,9 @@ export default Style = StyleSheet.create({
         // backgroundColor:'black',
         justifyContent:'center',
         marginTop: 0,
-        margin: 20,
+        margin: 0,
         width: 335,
-        height: 535
+        height: 400
       },
       container: {
         flex: 1,

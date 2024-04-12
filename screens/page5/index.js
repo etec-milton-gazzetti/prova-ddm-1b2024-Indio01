@@ -16,17 +16,9 @@ const Home = ({navigation}) => {
               <Text style={{fontWeight: 'bold', fontSize:25, fontStyle:'italic'}}>Daniel Lins de Oliveira</Text>
               <Text style={{fontSize: '20', fontWeight: 'bold'}}>Terceiro Info</Text>
               <Text style={{fontSize: '15'}}>RM 07685</Text>
-
             </View>
           </ScrollView>
         </SafeAreaView>
-
-        <View style={styles.buttonTitle}>
-          <Text style={styles.buttonText}>SOBRE</Text>
-        </View>
-        <TouchableOpacity style={styles.buttonBurguer} onPress={()=>navigation.toggleDrawer()}>
-          <Text style={styles.buttonText}><Ionicons name="menu" size={24} color="#fff" /></Text>
-        </TouchableOpacity>
       </View>
   );
 };

@@ -17,13 +17,6 @@ const Home = ({navigation}) => {
             </View>
           </ScrollView>
         </SafeAreaView>
-
-        <View style={styles.buttonTitle}>
-          <Text style={styles.buttonText}>INICIO</Text>
-        </View>
-        <TouchableOpacity style={styles.buttonBurguer} onPress={()=>navigation.toggleDrawer()}>
-          <Text style={styles.buttonText}><Ionicons name="menu" size={24} color="#fff" /></Text>
-        </TouchableOpacity>
       </View>
   );
 };

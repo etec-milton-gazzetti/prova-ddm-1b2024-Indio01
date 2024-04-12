@@ -12,7 +12,7 @@ export default Style = StyleSheet.create({
         marginTop: 0,
         margin: 20,
         width: 335,
-        height: 535
+        height: 400
       },
       container: {
         flex: 1,
